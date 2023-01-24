@@ -1,3 +1,3 @@
 # ecommerce-catalog
 
-Revisi Fake store API (Vanilla JS)
+Revision of Fake store API (Vanilla JS)
