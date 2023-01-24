@@ -1,0 +1,75 @@
+@import "general.css";
+/* Using a string */
+
+#idContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    /* Flex as child */
+    flex: 0 1 50px;
+    margin: 5px;
+    text-align: center;
+
+    /* Flex as parent */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 2px solid var(--first-color);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card .cardTop img {
+    width: 100%;
+    height: 150px;
+}
+
+.card .cardTop h4 {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: medium;
+    height: 100px;
+    text-align: center;
+}
+
+.card .cardTop .boxP {
+    overflow: hidden;
+    height: 65px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card .cardTop p {
+    font-size: small;
+}
+
+.card .cardBottom {
+    background-color: lightgray;
+}
+
+.card .cardBottom button {
+    background-color: var(--first-color);
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: small;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card .cardBottom button:hover {
+    background-color: grey;
+    color: white;
+}

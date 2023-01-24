@@ -1,0 +1,97 @@
+@import "general.css";
+/* Using a string */
+
+/* CSS Media Query (Breakpoint) */
+/* For dekstop: */
+body {
+    display: grid;
+    grid-template-areas:
+        "head head head"
+        "aside main main"
+        "foot foot foot"
+    ;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "head head head head"
+            "aside main main main"
+            "foot foot foot foot"
+        ;
+    }
+}
+
+/* For mobile phone: */
+@media only screen and (max-width: 576px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "head"
+            "aside"
+            "main"
+            "foot"
+        ;
+    }
+}
+
+/* style */
+.gridContainer {
+    border: 5px solid black;
+}
+
+.header {
+    grid-area: head;
+    background-color: var(--first-color);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+.aside {
+    grid-area: aside;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    text-align: center;
+}
+
+.main img {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.aside button {
+    background-color: var(--first-color);
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.aside button:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.footer {
+    grid-area: foot;
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--first-color);
+    margin-top: 30px;
+}
